@@ -11,7 +11,7 @@ class AuthService {
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token);
   }
-  
+
   isTokenExpired(token: string) {
     // TODO: return a value that indicates if the token is expired
     try {
@@ -40,7 +40,7 @@ class AuthService {
     // TODO: set the token to localStorage
     // TODO: redirect to the home page
     localStorage.setItem('id_token', idToken);
-    window.location.assign('/login');
+    window.location.assign('/');
   }
 
   logout() {
