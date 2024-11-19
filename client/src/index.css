@@ -55,8 +55,10 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: white;
+  color:black;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-bottom: 5%;
 }
 button:hover {
   border-color: #646cff;
@@ -100,7 +102,7 @@ tbody tr:nth-child(odd) {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: larger;
+  font-size: medium;
   font-weight: 900;
 }
 
@@ -117,6 +119,8 @@ tbody tr:nth-child(odd) {
 .nav-link {
   color: #fff;
   text-decoration: none;
+  display:flex;
+
 }
 
 .active {
@@ -147,15 +151,15 @@ tbody tr:nth-child(odd) {
 }
 
 .todo {
-  background-color: #e9cbec;
+  background-color: bisque;
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background-color: rgb(156, 140, 120);
 }
 
 .done {
-  background-color: #732381;
+  background-color: rgb(96, 80, 62);
 }
 
 .ticket-card {
@@ -176,43 +180,59 @@ tbody tr:nth-child(odd) {
 
 #create-ticket-link {
   display: block;
-  margin-left: auto;
+  margin-left: 78%;
+  margin-top: -6%;
+  margin-bottom: 5%;
+
 }
 
 
 .form {
-  width: 60%;
-  height: 80%;
-  background-color: #b864c4;
+  width: 100%;
+  background-color: bisque;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: right;
+  align-items: right;
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: black;
+  margin: 10px;
+  background-color: bisque;
 }
 
 .form > input {
   width: 200px;
-  
-}
+  background-color: white;
+  color:black;
+  margin: 5px;
+  }
 
 .form > label {
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+margin: 2.5%;
+
 }
 
 .form button {
-  margin-top: 2.5%;
+  width: 200px;
+  margin: 2.5%;
+  
 }
 
+.form select {
+  width: 300px;
+  background-color: white;
+  color:black;
+}
 .form textarea {
+  width: 300px;
   resize: both;
   min-height: 30px;
   min-width: 30px;
+  background-color: white;
+  color: black;
 }
 
 .editBtn {
